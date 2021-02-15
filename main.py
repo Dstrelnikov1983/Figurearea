@@ -4,19 +4,13 @@ print(os.getcwd())
 #mymodule.hello()
 
 with open('Figurlist.txt', 'r') as f:
-    fig = f.read.splitlines()
+    fig = f.read().splitlines()
 
+l=[]
 
-while (f):
-    line = f.readline
-    
+for x in fig: l.append(mymodule.fib(x))
 
-f = open()
-try:
-    assadsad
-finally:
-    f.close()
+k=[{'type':'T','cord': [{'x':10, 'y':20},{'x':60, 'y':50}]}, 'p']
 
-assadsad
-
-for x in fig: print(mymodule.fib(x))
+print (l)
+print (k)

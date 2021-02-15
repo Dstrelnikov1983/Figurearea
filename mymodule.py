@@ -19,5 +19,6 @@ def hello():
     print('Hello, world!')
 
 def fib(n):
-    b='d'+n
+    b={'type': n[0:1], 'cord': n[2:].split(' ')}
+    
     return b
