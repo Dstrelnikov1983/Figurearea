@@ -18,7 +18,14 @@
 def hello():
     print('Hello, world!')
 
-def fib(n):
-    b={'type': n[0:1], 'cord': n[2:].split(' ')}
+def ftodict(n):
+    b={'type': n[0:1], 'cord': [cordtodict(x[1:]) for x in n[2:].split(' ')]}
     
     return b
+
+def cordtodict(v):
+    z= {'x': v[0:len(v)-1].split(',')[0], 'y': v[0:len(v)-1].split(',')[1]}
+    
+    return z
+ 
+    
