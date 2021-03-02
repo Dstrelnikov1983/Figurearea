@@ -24,8 +24,14 @@ def ftodict(n):
     return b
 
 def cordtodict(v):
-    z= {'x': v[0:len(v)-1].split(',')[0], 'y': v[0:len(v)-1].split(',')[1]}
+    z= {'x': float(v[0:len(v)-1].split(',')[0]), 'y': float(v[0:len(v)-1].split(',')[1])}
     
     return z
- 
-    
+
+def squarecalc(figurcord):
+    sq=0.5*(figurcord[0].get('x')-figurcord[2].get('x'))*(figurcord[1].get('y') -figurcord[2].get('y'))
+    return sq
+
+def getsquare (cordlist):
+    sq= cordlist.get('square')
+    return sq
